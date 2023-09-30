@@ -1,10 +1,23 @@
-﻿using System.Diagnostics;
+﻿using ProceduralEngine.Entities;
+using System.Diagnostics;
 using System.Reflection;
 
 namespace ProceduralEngine.IO
 {
     public sealed class ObjExporter
     {
+        #region Construction
+        public ObjExporter(Geometry geometry)
+        {
+            Geometry = geometry;
+        }
+        #endregion
+
+        #region Properties
+        public Geometry Geometry { get; }
+        #endregion
+
+        #region Methods
         public void Export(string path)
         {
             string assemblyLocation = Assembly.GetExecutingAssembly().Location;
@@ -15,5 +28,6 @@ namespace ProceduralEngine.IO
                 # Procedural Engine {versionString}
                 """);
         }
+        #endregion
     }
 }

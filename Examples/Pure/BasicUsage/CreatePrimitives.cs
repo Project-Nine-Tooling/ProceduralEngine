@@ -1,4 +1,6 @@
 Import(ProceduralEngine)
+using static ProceduralEngine.Tools.CreationNodes;
+using Vector = ProceduralEngine.Types.Vector;
 
 // Style 1
 var cube = CreateCube();

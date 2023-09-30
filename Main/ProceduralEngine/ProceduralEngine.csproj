@@ -16,8 +16,6 @@
 
   <ItemGroup>
     <Folder Include="Algorithms\" />
-    <Folder Include="Types\" />
-    <Folder Include="Operations\" />
   </ItemGroup>
 
   <ItemGroup>
