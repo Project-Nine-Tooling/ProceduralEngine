@@ -1,17 +1,30 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
+    <SatelliteResourceLanguages>en-US</SatelliteResourceLanguages>
+    <PublishReadyToRun>true</PublishReadyToRun>
+    <Version>0.0.1</Version>
+    <Title>Procedural Engine</Title>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Project-Nine-Tooling/ProceduralEngine</RepositoryUrl>
+    <Company>TotalImagine.com</Company>
+    <Authors>Charles Zhang</Authors>
   </PropertyGroup>
 
   <ItemGroup>
     <Folder Include="Algorithms\" />
-    <Folder Include="IO\" />
     <Folder Include="Types\" />
-    <Folder Include="Tools\" />
     <Folder Include="Operations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
